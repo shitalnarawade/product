@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <style>
+    lable {
+      width: 500px;
+      margin-top: 12px;
+
+    }
+    input{
+        width: 500px;
+        margin-bottom: 12px;
+    }
+    #addbtn{
+        width: 100px;
+        margin: 12px;
+        border: 2px;
+    }
+    ul li{
+        list-style: none;
+    }
+  </style>
+  <body>
+    <div class="container">
+        <div class="maindiv">
+    <form onsubmit="handleFormSubmit(event)">
+        <label for="proprice">Selling Price :</label>
+          <input type="number" class="form-control" name="num" id="proprice" />
+          <label for="proname">Product Name :</label>
+          <input type="text" class="form-control" name="name" id="proname">
+          <button type="submit" class="btn btn-primary" id="addbtn">Add</button>
+      </form>
+
+    </div>
+    <h1>Products</h1>
+    <ul id="userlist">
+        <li>Products</li>
+    </ul>
+    <label for="number" id="total_seat">Total Value Worth of Products Rs: </label>
+    <span id="toNumber"></span>
+</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.5/axios.min.js"></script>
+    <script src="./app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
